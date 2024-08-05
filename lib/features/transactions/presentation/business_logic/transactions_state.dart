@@ -1,7 +1,11 @@
+import 'package:equatable/equatable.dart';
 import 'package:wally2/features/transactions/domain/entities/transaction_entity.dart';
 
-abstract class TransactionState {
+abstract class TransactionState extends Equatable {
   const TransactionState();
+
+  @override
+  List<Object> get props => [];
 }
 
 class TransactionInitialState extends TransactionState {

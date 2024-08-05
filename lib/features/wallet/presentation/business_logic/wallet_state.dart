@@ -1,7 +1,11 @@
+import 'package:equatable/equatable.dart';
 import 'package:wally2/features/wallet/domain/entities/wallet_entity.dart';
 
-abstract class WalletState {
+abstract class WalletState extends Equatable {
   const WalletState();
+
+  @override
+  List<Object> get props => [];
 }
 
 class WalletInitialState extends WalletState {
