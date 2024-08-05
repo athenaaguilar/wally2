@@ -9,4 +9,5 @@ models:
     fake:
       _count: 12
       amount: { int: [1, 5000] }
+      transactionType: { stringOf: [Send Money, Interest, Payment] }
       createdAt: { dateTime: [2024-01-01T00:00:00Z, 2024-07-31T23:59:59Z] }
