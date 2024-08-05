@@ -17,10 +17,14 @@ GoRouter appRouter() {
       ),
       GoRoute(
         path: SendMoneyScreen.routeName,
-        pageBuilder: (context, state) => NoTransitionPage<void>(
-          key: state.pageKey,
-          child: const SendMoneyScreen(),
-        ),
+        pageBuilder: (context, state) {
+          final args = state.extra as int;
+
+          return NoTransitionPage<void>(
+            key: state.pageKey,
+            child: SendMoneyScreen(balance: args),
+          );
+        },
       ),
       GoRoute(
         path: TransactionsScreen.routeName,
