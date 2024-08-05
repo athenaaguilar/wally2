@@ -1,16 +1,16 @@
 # wally2
 
-A new Flutter project.
+A simple wallet app built with Flutter.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+To run the code, use:  
+`make rebuild`
 
-A few resources to get you started if this is your first Flutter project:
+To run the tests, use:  
+`make tests`
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Additional Resources
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+[Screen recording of the running application](https://drive.google.com/file/d/14AF0RlLYPkZN6wLF7aNUYVP-XZ01j5HK/view?usp=sharing)
+![Screen recording of the test results](test-results.png)

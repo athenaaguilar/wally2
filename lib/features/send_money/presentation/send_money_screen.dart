@@ -125,8 +125,8 @@ class _SendMoneyScreenState extends State<SendMoneyScreen> {
                           widget.balance - int.parse(controller.text),
                         ));
                     // Redirect back to wallet screen
-                    context.pop();
                     context.read<WalletBloc>().add(const GetWalletEvent(1));
+                    context.pop();
                   } else {
                     showAppSnackbar(
                       context,
